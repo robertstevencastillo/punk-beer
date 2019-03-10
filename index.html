@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Look For Beers</title>
+
+    <style>
+        .img-thumbnail {
+            width: 130px;
+            margin: 0 auto;
+        }
+
+        .app-container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        .output-beer {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /*
+        .card-container {
+            float: left;
+            border: solid red 1px;
+            width: 45%;
+            margin: auto 10px auto 10px;
+        } */
+
+        @media screen and (min-width: 801px) {
+            .card-container-styles {
+                display: inline-block;
+                width: 40%;
+                margin: auto 10px auto 10px;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .card-container-styles {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!--Start Navigation Menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn.pixabay.com/photo/2012/04/10/22/43/beer-26722_960_720.png" height=30 width=30>Beer Search</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Favorite Beers</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navigation Menu-->
+        <!--Start Search Form-->
+        <label>Enter A Number To Get A Random Beer</label>
+        <div class="input-group mb-3">
+            <input type="number" class="form-control beerInput" aria-label="Search For A Beer" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary searchBeerButton" type="button">Search Beer</button>
+            </div>
+        </div>
+        <!--End Search Form-->
+        <br>
+
+        <div class="output-beer">
+        </div>
+
+
+
+    </div>
+    <!--End Container Div-->
+
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js "></script>
+
+    <script src="punkBeer.js"></script>
+    <script src="punkBeerUI.js"></script>
+    <script src="punkBeerApp.js"></script>
+
+</body>
+
+</html>
+
+<!--  <div class="col-6 cards-container">-->
